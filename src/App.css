@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajweed+Quran&display=swap");
+
+:root {
+  --primary: #2E8B57;
+  --secondary: #DAA520;
+  --accent: #4682B4;
+  /* --background: #F5F5DC; */
+  --foreground: #2F4F4F;
+  --muted: #F5F5F5;
+  --muted-foreground: #6B7280;
+  --card: #FFFFFF;
+  --card-foreground: #1F2937;
+  --popover: #FFFFFF;
+  --popover-foreground: #1F2937;
+  --border: #E5E7EB;
+  --input: #E5E7EB;
+  --ring: #2E8B57;
+  --radius: 0.5rem;
+ --background: linear-gradient(135deg, #a3cef1, #f7f0c3);
+
+
+}
+
+.dark {
+  --background: #0F172A;
+  --foreground: #F1F5F9;
+  --card: #1E293B;
+  --card-foreground: #F1F5F9;
+  --popover: #1E293B;
+  --popover-foreground: #F1F5F9;
+  --primary: #22C55E;
+  --primary-foreground: #0F172A;
+  --secondary: #475569;
+  --secondary-foreground: #F1F5F9;
+  --muted: #475569;
+  --muted-foreground: #94A3B8;
+  --accent: #475569;
+  --accent-foreground: #F1F5F9;
+  --destructive: #EF4444;
+  --destructive-foreground: #F1F5F9;
+  --border: #475569;
+  --input: #475569;
+  --ring: #22C55E;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Amiri', 'Amiri Quran', serif;
+}
+
+
+
+
+.font-arabic {
+  font-family: 'Amiri', 'Amiri Quran', serif;
+}
+
+.font-tajweed {
+  font-family: 'Tajweed Quran', 'Amiri', serif;
+}
+
+.islamic-pattern {
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(46, 139, 87, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(218, 165, 32, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(70, 130, 180, 0.1) 0%, transparent 50%);
+}
+
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+
+
+ 
